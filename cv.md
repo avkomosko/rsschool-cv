@@ -56,8 +56,11 @@ function getSrc(e) {
 ### Education
 
 * 2000\-2005 Engenier of radioelectronics **Belarusian State University of Informatics and Radioelectronics**
-* 2021\- present online courses on [Mozilla Developer Network](https://developer.mozilla.org/en*US/)
-* 2021\- present online course on [Learnjavascript.ru](https://learn.javascript.ru/)
+* 2015\-2018 English at the Intenational House school
+* 2017 "Adaptation of an employee to the role of a manager" cours at the  [ZIS](https://www.zis.by/)
+* 2019 "Professional manager skills" cours at the [ZIS](https://www.zis.by/)
+* 2021\-present online courses on [Mozilla Developer Network](https://developer.mozilla.org/en*US/)
+* 2021\-present online course on [Learnjavascript.ru](https://learn.javascript.ru/)
 
 ### Languages
 * English B2+ 
