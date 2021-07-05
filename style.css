@@ -1,0 +1,45 @@
+html {
+  position: relative;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body {
+  position: relative;
+  display: grid;
+  padding: 1em;
+  border: solid;
+}
+header {
+  position: relative;
+  display: grid;
+}
+aside {
+  position: relative;
+  display: grid;
+}
+footer {
+  position: relative;
+  display: inline-flex;
+}
+details {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 1em;
+  bottom: 0;
+  left: 1em;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+figcaption {
+  position: relative;
+}
