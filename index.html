@@ -6,20 +6,94 @@
   <title>HTML, CSS & Git Basics task</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-  
+  <h1>Aliaksei Kamoska</h1>
+  <img src="photo.jpg" alt="My photo for cv">
+  <h2>Junior Front End Developer</h2>
+  <h3>Contacts:</h3>
+  <ul>
+    <li>ZIP CODE: 220036</li>
+    <li>Address: 116-18 Libknehta str., Minsk, Belarus.</li>
+    <li>Phone: <a href="tel:+375(29)656-59-52">+375(29)656-59-52</a></li>
+    <li>Email: <a href="mailto:avkomosko@gmail.com">avkomosko@gmail.com</a></li>
+    <li>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></li>
+      </ul>
   </header>
 
   <aside>
-    
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML - basic</li>
+      <li>CSS - basic</li>
+      <li>JavaScript - basic</li>
+      <li>Git - basic</li>
+      <li>Parcel - basic</li>
+      <li>Prettier - basic</li>
+    </ul>
+    <h3>Experience</h3>
+    <ul>
+      <li>MDN "HTML — Structuring the Web"</li>
+      <li>MDN "CSS — Styling the Web"</li>
+      <li>MDN "Web forms — Working with user data"</li>
+      <li>MDN "Accessibility — Make the web usable by everyone"</li>
+      <li>MDN "Tools and testing"</li>
+      <li>RSSchool "future project-1"</li>
+      <li>RSSchool "future project-2"</li>
+    </ul>
   </aside>
   <main>
-
+  <article>
+  <h3>Profile</h3>
+  <p>Budding front-end developer with a knowledge of how to build accesabale and responsive web design. Easily can lern new
+  technologies and tools. I have sucsesfuly negotiated with buisness partners from foreign counties, such as the USA and
+  the GB on my previous work.</p>
+</article>
+<article>
+  <h3>Code review</h3>
+  <p>for (let i = 1; i &lt;= 5; i++) {<br>
+    &nbsp;&nbsp;let img="images/pic" + i + ".jpg";<br>
+    &nbsp;&nbsp;const newImage=document.createElement("img");<br>
+    &nbsp;&nbsp;newImage.setAttribute("src", img);<br>
+    &nbsp;&nbsp;thumbBar.appendChild(newImage);<br>
+  }<br>
+  <br>
+  thumbBar.addEventListener("click", getSrc,false);<br>
+  <br>
+  function getSrc(e) {<br>
+    &nbsp;&nbsp;let imgSrc=e.target.getAttribute("src");<br>
+    &nbsp;&nbsp;console.log(imgSrc);<br>
+    &nbsp;&nbsp;displayedImage.setAttribute("src", imgSrc);<br>
+    &nbsp;&nbsp;return imgSrc;<br>
+   }</p>
+    </article>
+    <article>
+      <h3>Education</h3>
+      <ul>      
+      <li>2000-2005 Engenier of radioelectronics <strong>Belarusian State University of Informatics and Radioelectronics</strong></li>
+      <li>2015-2018 English at the Intenational House school</li>
+      <li>2017 "Adaptation of an employee to the role of a manager" course at the [ZIS](https://www.zis.by/)</li>
+      <li>2019 "Professional manager skills" course at the [ZIS](https://www.zis.by/)</li>
+      <li>2021-present online courses on [Mozilla Developer Network](https://developer.mozilla.org/en*US/)</li>
+      <li>2021-present online course on [Learnjavascript.ru](https://learn.javascript.ru/)</li>
+</ul>
+    </article>
+<article>
+  <h3>Languages</h3>
+  <ul>
+  <li>English B2+</li>
+  <li> Polish A1</li>
+  <li>Russian native</li>
+  </ul>
+</article>
   </main>
 
 <footer>
-  
+  <details>
+    <summary></summary>
+    <p> </p>
+  </details>
 </footer>
 </body>
 
