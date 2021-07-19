@@ -1,14 +1,19 @@
 html {
   display: inline-flex;
   justify-content: space-around;
-  margin-left: auto;
   margin-right: auto;
-  font-family: Arial, sans-serif;
+  margin-left: auto;
+  
+  font-family: "Arial", sans-serif;
   line-height: 1.5rem;
 }
 
+:root {
+  --main-background-color: rgba(13, 243, 232, 0.164);
+  --main-border-color:#c5c7c4 ;
+}
+
 body {
-  position: relative;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: fit-content(360px) fit-content(390px);
@@ -16,19 +21,26 @@ body {
     "header header"
     "aside main"
     "footer footer";
-  box-sizing: border-box;
-  min-width: 700px;
-  border-style: solid;
-  border-width: 0.2rem;
-  border-color: rgba(13, 243, 232, 0.164);
+  
+  border: 0.2rem solid var(--main-border-color);
 }
 
 header {
   grid-area: header;
+
   display: flex;
+  box-sizing: border-box;
   justify-content: space-around;
-  background-color: rgba(13, 243, 232, 0.164);
+  margin: 0;
+
+  background-color: var(--main-background-color);
+  border: 0.2rem solid var(--main-border-color);
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
 }
+
+header > img {border-radius: 0% 25%;}
 
 .header-wraper {
   display: flex;
@@ -38,37 +50,48 @@ header {
 
 .contacts-wraper > h3 { 
   margin-left: 1.2rem;
+
   text-align: left;
 }
 
 aside {
   grid-area: aside;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   box-sizing: border-box;
+  min-width: 360px;
+
   padding-right: 0.5rem;
 }
 
 main {
   grid-area: main;
+
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-evenly;
-  padding-left: 1rem;
   padding-right: 0.5rem;
+  padding-left: 1rem;
 }
 
-p { text-indent: 1rem; }
-h3 { text-align: center; }
-article { padding-right: 0.5rem; }
+p {text-indent: 1rem;}
+h3 {text-align: center;}
+article {padding-right: 0.5rem;}
 
 footer {
   grid-area: footer;
+
   display: inline-flex;
   align-items: center;
-  background-color: rgba(13, 243, 232, 0.164);
+  
+  background-color: var(--main-background-color);
+  border: 0.2rem solid var(--main-border-color);
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
 }
 
 figure {
@@ -76,3 +99,4 @@ figure {
   margin: auto;
 }
 
+details {padding: 0.5rem;}
