@@ -40,24 +40,30 @@
       </nav>
       <div class="header__sub-wrapper">
         <img src="assets/img/photo.jpg" alt="My photo for cv" width="305" height="409">
-        <div class="header__contacts-wraper">
+        <div class="header__profile-wraper">
           <h1>Aliaksei Kamoska</h1>
           <h2>Junior Front End Developer</h2>
-          <div class="contacts-wraper">
-            <h3>Contacts:</h3>
-            <ul id="contacts">
-              <li>ZIP CODE: 220036</li>
-              <li>Address: 116-18 Libknehta str., Minsk, Belarus.</li>
-              <li>Phone: <a href="tel:+375(29)656-59-52">+375(29)656-59-52</a></li>
-              <li>Email: <a href="mailto:avkomosko@gmail.com">avkomosko@gmail.com</a></li>
-              <li>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></li>
-            </ul>
-          </div>
+          <article id="profile">
+            <h3>Profile</h3>
+            <p>Budding front-end developer with a knowledge of how to build accesabale and responsive web design. Easily can
+            lern new technologies and tools.</p>
+            <p>I have sucsesfuly negotiated with buisness partners from foreign counties, such
+            as the USA and the GB on my previous work.</p>
+          </article>
         </div>
       </div>
     </header>
 
     <aside>
+      <div class="contacts-wraper">
+        <h3 id="contacts">Contacts:</h3>
+        <ul>
+          <li>Address: 116-18 Libknehta str.,<br>Minsk, Belarus.</li>
+          <li>Phone: <a href="tel:+375(29)656-59-52">+375(29)656-59-52</a></li>
+          <li>Email: <a href="mailto:avkomosko@gmail.com">avkomosko@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></li>
+        </ul>
+      </div>
       <h3>Skills</h3>
       <ul id="skills">
         <li>HTML - basic</li>
@@ -67,16 +73,7 @@
         <li>Parcel - basic</li>
         <li>Prettier - basic</li>
       </ul>
-      <h3>Experience</h3>
-      <ul id="experience">
-        <li>MDN "HTML — Structuring the Web"</li>
-        <li>MDN "CSS — Styling the Web"</li>
-        <li>MDN "Web forms — Working with user data"</li>
-        <li>MDN "Accessibility — Make the web usable by everyone"</li>
-        <li>MDN "Tools and testing"</li>
-        <li>RS school "future project-1"</li>
-        <li>RS school "future project-2"</li>
-      </ul>
+      
       <h3>Languages</h3>
       <ul id="languages">
         <li>English B2+</li>
@@ -86,13 +83,22 @@
     </aside>
 
     <main>
-      <article id="profile">
-        <h3>Profile</h3>
-        <p>Budding front-end developer with a knowledge of how to build accesabale and responsive web design. Easily can
-        lern new technologies and tools. I have sucsesfuly negotiated with buisness partners from foreign counties, such
-        as the USA and the GB on my previous work.</p>
+      <article>
+        <h3>Experience</h3>
+        <ul id="experience">
+          <li>MDN "HTML — Structuring the Web"</li>
+          <li>MDN "CSS — Styling the Web"</li>
+          <li>MDN "Web forms — Working with user data"</li>
+          <li>MDN "Accessibility — Make the web usable by everyone"</li>
+          <li>MDN "Tools and testing"</li>
+          <li>
+            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/vertical-slider" class="project" target="_blank">RS school "double vertical slider"</a>
+          </li>
+          <li>
+            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/custom-video-player/" class="project" target="_blank">RS school "custom video player"</a>
+          </li>
+      </ul>
       </article>
-
       <article id="code-review">
         <h3>Code review</h3>
         <pre><code class="javascript">
@@ -106,7 +112,7 @@
                 let sequence = arr.map((item, index) => item - index);
                 let stack = [];
                 let map = new Map();
-                for (let i = 0; i <= sequence.length; i++) {
+                for (let i = 0; i &lt; sequence.length; i++) {
                   let length = sequence.filter((item) => item === sequence[i]).length;
                   if (length >= 3) {
                     if (stack[stack.length - 1] !== length || sequence[i-1] !== sequence[i]) {
