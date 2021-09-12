@@ -124,8 +124,9 @@ aside ul {
 .contacts-wraper,
 .skills-wrapper,
 .langueges-wrapper {
-  margin-left: 0.2rem;
-  margin-bottom: 10rem;
+  margin: 10px 0 55px 5px;
+  /* margin-left: 0.2rem;
+  margin-bottom: 10rem; */
 }
 
 
@@ -144,7 +145,16 @@ main {
 .screenshot {max-width: 100%;}
 p {text-indent: 1rem;}
 h3 {text-align: center;}
-article {padding-right: 0.5rem;}
+
+#expirience,
+#code-review,
+#education {
+  padding: 15px 10px;
+}
+
+.video-presentation {
+  padding-left: 20%;
+}
 
 footer {
   grid-area: footer;
