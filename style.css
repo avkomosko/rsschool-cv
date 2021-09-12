@@ -68,27 +68,11 @@ span {
   display: none;
   position: relative;
   width: 30px;
-  height: 3px;
+  height: 2px;
   background-color: black;
 }
 
-span:before,
-span:after {
-  display: none;
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color:black;
-}
 
-span:before {
-  top: 10px;
-}
-span:after {
-  top: -10px;
-}
 .menu-item {
   margin: 0 0 0 15px;
   list-style: none;
@@ -279,8 +263,25 @@ details {padding: 0.5rem;}
   span {
     position:absolute;
     display: block;
-    right: 5px;
-    top: 5px;
+    right: 15px;
+    top: 25px;
+  }
+
+  span:before,
+  span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color:black;
+  }
+
+  span:before {
+    top: 10px;
+  }
+  span:after {
+    top: -10px;
   }
   
   .header__sub-wrapper {
@@ -312,17 +313,18 @@ details {padding: 0.5rem;}
     max-width: 460px;
   }
   footer {
+    flex-direction: column;
     max-width: 560px;
   }
 }
 
 @media (max-width: 560px) {
   article {
-    max-width: 460px;
+    max-width: 320px;
     font-size: 1em;
   }
-  #profile {
-    max-width: 360px;
+  .header__profile-wraper {
+    max-width: 320px;
     padding-left: 15%;
   }
   aside {
@@ -331,14 +333,17 @@ details {padding: 0.5rem;}
     align-items: center;
   }
   pre {
-    font-size: 9px;
+    overflow: scroll;
+    max-width: 320px;
+    font-size: 7px;
   }
   .video-presentation {
     padding-left: 0;
-    max-width: 460px;
+    max-width: 290px;
   }
   footer {
-    max-width: 75 %;
+    flex-direction: column;
+    max-width: 320px;
     font-size: 0.8em;
   }
 }
@@ -347,6 +352,14 @@ details {padding: 0.5rem;}
   body {
     background: gray;
   }
-
+   article {
+    max-width: 300px;
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+  .header__profile-wraper {
+    max-width: 300px;
+    padding-left: 15%;
+  }
 }
 
