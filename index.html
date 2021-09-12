@@ -10,7 +10,6 @@
   <body>
     <header>
       <nav class="menu-wrapper">
-        <img src="assets/svg/menu-img.svg" alt="menu-logo" class="menu-img">
         <ul class="menu">
           <li class="menu-item">
             <a href="#contacts" class="menu-link">Contacts</a>
@@ -56,7 +55,7 @@
 
     <aside>
       <div class="contacts-wraper">
-        <h3 id="contacts">Contacts:</h3>
+        <h3 id="contacts">Contacts</h3>
         <ul>
           <li>Address: 116-18 Libknehta str.,<br>Minsk, Belarus.</li>
           <li>Phone: <a href="tel:+375(29)656-59-52">+375(29)656-59-52</a></li>
@@ -64,38 +63,51 @@
           <li>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></li>
         </ul>
       </div>
-      <h3>Skills</h3>
-      <ul id="skills">
-        <li>HTML - basic</li>
-        <li>CSS - basic</li>
-        <li>JavaScript - basic</li>
-        <li>Git - basic</li>
-        <li>Parcel - basic</li>
-        <li>Prettier - basic</li>
-      </ul>
+
+      <div class="skills-wrapper">
+        <h3 id="skills">Skills</h3>
+        <ul>
+          <li>HTML - basic</li>
+          <li>CSS - basic</li>
+          <li>JavaScript - basic</li>
+          <li>Git - basic</li>
+          <li>Parcel - basic</li>
+          <li>Prettier - basic</li>
+          <li>Figma - basic</li>
+        </ul>
+      </div>
       
-      <h3>Languages</h3>
-      <ul id="languages">
-        <li>English B2+</li>
-        <li>Polish A1</li>
-        <li>Russian native</li>
+      <div class="langueges-wrapper">
+        <h3 id="languages">Languages</h3>
+        <ul>
+          <li>English B2+</li>
+          <li>Polish A1</li>
+          <li>Russian native</li>
       </ul>
+      </div>
+      
     </aside>
 
     <main>
-      <article>
+      <article id="experience">
         <h3>Experience</h3>
-        <ul id="experience">
+        <ul>
           <li>MDN "HTML — Structuring the Web"</li>
           <li>MDN "CSS — Styling the Web"</li>
           <li>MDN "Web forms — Working with user data"</li>
           <li>MDN "Accessibility — Make the web usable by everyone"</li>
           <li>MDN "Tools and testing"</li>
           <li>
-            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/vertical-slider" class="project" target="_blank">RS school "double vertical slider"</a>
+            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/vertical-slider" class="project" target="_blank">RS school "Double vertical slider"
+              <img class="screenshot" src="assets/img/slider.png" alt="vertical-slider screenshot">
+            </a>
+            <p>A learning project with "infinite" slider. In addition to buttons it has mouse swipes and mouse scroll functionality.</p>
           </li>
           <li>
-            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/custom-video-player/" class="project" target="_blank">RS school "custom video player"</a>
+            <a href="https://rolling-scopes-school.github.io/avkomosko-JSFEPRESCHOOL/custom-video-player/" class="project" target="_blank">RS school "Custom video player"
+              <img class="screenshot" src="assets/img/video-player.png" alt="video-player screenshot">
+            </a>
+            <p>A learning project with custom video player. It has detailed description in the console.</p>
           </li>
       </ul>
       </article>
