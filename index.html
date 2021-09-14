@@ -13,9 +13,9 @@
 
   <body>
     <div class="container">
-      <header>
+      <header class="header">
         <nav class="menu-wrapper">
-          <span></span>
+          <span class="burger"></span>
           <ul class="menu">
             <li class="menu-item">
               <a href="#contacts" class="menu-link">Contacts</a>
@@ -119,12 +119,12 @@
         </article>
         <article id="code-review">
           <h3>Code review</h3>
-          <pre><code class="javascript">
+          <pre><code class="html">
 function solve(input) {
   let set = new Set(input.split(','));
   let array = Array.from(set);
   array = array.map((el) => (el = +el));
-  rray.sort((a, b) => a - b);
+  array.sort((a, b) => a - b);
             
   function findSequence(arr) {
     let sequence = arr.map((item, index) => item - index);
@@ -193,6 +193,7 @@ function solve(input) {
         </figure>
       </footer>
     </div>
+  <script src="index.js"></script>
   </body>
 
 </html>
