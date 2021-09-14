@@ -44,7 +44,11 @@
           </ul>
         </nav>
         <div class="header__sub-wrapper">
-          <img src="assets/img/photo.jpg" alt="My photo for cv" width="305" height="409">
+          <picture class=main-photo>
+            <source media="(max-width: 768px)" srcset="assets/img/photo_205_275.jpg">
+            <source media="(min-width: 769px)" srcset="assets/img/photo_305_409.jpg">
+            <img src="assets/img/photo_305_409.jpg" alt="My photo for cv">
+          </picture>
           <div class="header__profile-wraper">
             <h1>Aliaksei Kamoska</h1>
             <h2>Junior Front End Developer</h2>
