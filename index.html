@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>HTML, CSS & Git Basics task</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
   </head>
 
   <body>
@@ -42,28 +42,15 @@
               <a href="#video" class="menu-link">Video presentation</a>
             </li>
           </ul>
-        </nav>
-        <div class="header__sub-wrapper">
-          <picture class=main-photo>
-            <source media="(max-width: 768px)" srcset="assets/img/photo_205_275.jpg">
-            <source media="(min-width: 769px)" srcset="assets/img/photo_305_409.jpg">
-            <img src="assets/img/photo_305_409.jpg" alt="My photo for cv">
-          </picture>
-          <div class="header__profile-wraper">
-            <h1>Aliaksei Kamoska</h1>
-            <h2>Junior Front End Developer</h2>
-            <article id="profile">
-              <h3>Profile</h3>
-              <p>Budding front-end developer with a knowledge of how to build accesabale and responsive web design. Easily can
-              lern new technologies and tools.</p>
-              <p>I have sucsesfuly negotiated with buisness partners from foreign counties, such
-              as the USA and the GB on my previous work.</p>
-            </article>
-          </div>
-        </div>
+        </nav> 
       </header>
 
       <aside>
+        <picture class="main-photo">
+          <source media="(max-width: 768px)" srcset="assets/img/photo_205_275.jpg">
+          <source media="(min-width: 769px)" srcset="assets/img/photo_305_409.jpg">
+          <img src="assets/img/photo_305_409.jpg" alt="My photo for cv">
+        </picture>
         <div class="contacts-wraper">
           <h3 id="contacts">Contacts</h3>
           <ul>
@@ -99,6 +86,18 @@
       </aside>
 
       <main>
+        <div class="profile-wraper">
+          <h1>Aliaksei Kamoska</h1>
+          <h2>Junior Front End Developer</h2>
+          <article id="profile">
+            <h3>Profile</h3>
+            <p>Budding front-end developer with a knowledge of how to build accesabale and responsive web design. Easily can
+              lern new technologies and tools.</p>
+            <p>I have sucsesfuly negotiated with buisness partners from foreign counties, such
+              as the USA and the GB on my previous work.</p>
+          </article>
+        </div>
+        
         <article id="experience">
           <h3>Experience</h3>
           <ul>
@@ -119,51 +118,21 @@
               </a>
               <p>A learning project with custom video player. It has detailed description in the console.</p>
             </li>
-        </ul>
+          </ul>
         </article>
         <article id="code-review">
           <h3>Code review</h3>
-          <pre><code class="html">
-function solve(input) {
-  let set = new Set(input.split(','));
-  let array = Array.from(set);
-  array = array.map((el) => (el = +el));
-  array.sort((a, b) => a - b);
-            
-  function findSequence(arr) {
-    let sequence = arr.map((item, index) => item - index);
-    let stack = [];
-    let map = new Map();
-    for (let i = 0; i &lt; sequence.length; i++) {
-      let length = sequence.filter((item) => item === sequence[i]).length;
-      if (length >= 3) {
-        if (stack[stack.length - 1] !== length || sequence[i-1] !== sequence[i]) {
-          stack.push(length);
-          map.set(i, length);
-        }
-      }
-    }
-    return map;
-  }
+          <pre><code class="language=javascript">
+          function solve(input) {
+            let set = new Set(input.split(','));
+            let array = Array.from(set);
 
-  function joinSequence(arr) {
-    let map = findSequence(arr);
-    if (map.size !== 0) {
-      for (let i = arr.length - 1; i >= 0; i--) {
-        if (map.has(i)) {
-          arr.splice(i, map.get(i), `${arr[i]}-${arr[i + map.get(i) - 1]}`);
-        }
-      }
-    }
-  }
+            array = array.map((el) => (el = +el));
+            array.sort((a, b) => a - b);
 
-  if (array.length >= 3) {
-    joinSequence(array);
-  }
-
-  return array.join(',');
- }
-        </code></pre>
+            return array.join(',');
+          }           
+          </code></pre>
         </article>
 
         <article id="education">

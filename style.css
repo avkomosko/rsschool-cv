@@ -356,6 +356,11 @@ details {padding: 0.5rem;}
     overflow: scroll;
     max-width: 320px;
     font-size: 7px;
+    
+  }
+
+  pre code {
+    word-break: break-all;
   }
   .video-presentation {
     padding-left: 0;
@@ -382,7 +387,7 @@ details {padding: 0.5rem;}
 
   main {
     box-sizing: border-box;
-    padding:5px 3px;
+    padding:5px 3px 0 15px;
     max-width: 320px;
   }
   .screenshot {max-width: 270px;}
