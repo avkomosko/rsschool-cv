@@ -6,7 +6,8 @@
   --menu-background-color: #0df3e82a;
   --main-font-color: #ffffff;
   --aside-background-color: #413c3c;
-  --aside-link-color: #05c098;
+  --aside-link-color: #d6c910;
+  --main-link-color: #1382e9;
 }
 
 html {
@@ -30,7 +31,6 @@ body {background-color: var(--body-background-color);}
 .container {
   position: relative;
   display: grid;
-  /* grid-auto-rows: minmax(50px, auto); */
   grid-template-columns: fit-content(360px) fit-content(390px);
   grid-template-areas:
     "header header"
@@ -47,21 +47,20 @@ header {
   position: fixed;
   display: block;
   grid-column: 1/4;
-
+  overflow: hidden;
   width: 100%;
-  max-width: 1024px;
-  /* background-color: var(--main-background-color); */
+  max-width: 803px;
 }
 
 .menu-wrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex: 1 1 100%;
 
   max-width: 100%;
 
-  padding: 12px 15px;
+  padding: 12px 0;
   background-color: var(--menu-background-color);
 }
 
@@ -70,7 +69,6 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
   max-width: 100%;
-  
 }
 
 .burger {
@@ -92,7 +90,7 @@ header {
 }
 
 .menu-link {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--main-font-color);
@@ -173,7 +171,13 @@ main {
 
 }
 
+.project {color: var(--main-link-color);}
+
+main a {color: var(--main-link-color);}
+
 .screenshot {max-width: 100%;}
+
+.screenshot:hover {transform: translateX(-20px) scale(1.1, 1.1);}
 
 p {text-indent: 1rem;}
 
@@ -198,6 +202,8 @@ footer {
   align-items: center;
   background-color: var(--main-background-color);
 }
+
+footer a {color: var(--main-link-color)}
 
 figure {
   flex-direction: column;
