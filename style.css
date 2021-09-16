@@ -377,6 +377,8 @@ details {padding: 0.5rem;}
     padding: 15px 0 15px 0;
     font-size: 1.5rem;
   }
+  .main-photo {padding-left: 0;}
+
   article {
     max-width: 320px;
     font-size: 1em;
