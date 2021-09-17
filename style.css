@@ -1,6 +1,5 @@
 :root {
   --main-background-color: #0df3e82a;
-  --main-border-color:#0df3e82a;
   --body-background-color:#D3D3D3;
   --container-background-color: #c0c4c3;
   --menu-background-color: #0df3e82a;
@@ -8,6 +7,7 @@
   --aside-background-color: #413c3c;
   --aside-link-color: #d6c910;
   --main-link-color: #1382e9;
+  --dark-font-color: #111010;
 }
 
 html {
@@ -39,7 +39,6 @@ body {background-color: var(--body-background-color);}
 
   max-width: 1024px;
   margin: 0 auto;
-  /* border: 0.2rem solid var(--main-border-color); */
   background-color: var(--container-background-color);
 }
 
@@ -61,7 +60,7 @@ header {
   max-width: 100%;
 
   padding: 12px 0;
-  background-color: var(--menu-background-color);
+  background-color: var(--aside-background-color);
 }
 
 .menu {
@@ -76,7 +75,7 @@ header {
   position: relative;
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: var(--dark-font-color);
 }
 
 .menu-item {
@@ -85,9 +84,7 @@ header {
   list-style: none;
 }
 
-.menu-item:hover {
-  box-shadow: 0 0 1em #ffffff;
-}
+.menu-item:hover {box-shadow: 0 0 1em #ffffff;}
 
 .menu-link {
   font-size: 0.75rem;
@@ -109,7 +106,6 @@ header {
 .main-photo img {
   border-width: 2px;
   border-radius: 50%;
-  border-color: var(--main-border-color);
   border: 2px solid var(--main-background-color);
 }
 
@@ -223,15 +219,18 @@ details {padding: 0.5rem;}
     max-width: 760px;
     overflow: hidden;
   }
+  .menu-wrapper {background-color: transparent;}
+  .menu {max-width: 760px;}
   .menu-item {padding: 0 5px 0 5px;}
 
-  .menu-link {font-size: 0.8rem;}
+  .menu-link {font-size: 0.6rem;}
 
   .additional-title {
     display: block;
     width: 50%;
     text-align: center;
-    }
+    color: var(--main-font-color);
+  }
 
   .main-title {display: none;}
 
@@ -285,27 +284,15 @@ details {padding: 0.5rem;}
     transition: all 0.5s ease-in-out;
   }
 
-  .header {
-    z-index: 0;}
-
-  .header:before {
-    /* content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: var(--menu-background-color);
-    z-index: 2; */
-  }
+  .additional-title {background-color: var(--main-background-color);}
 
   .menu-wrapper {
     display: block;
-    /* position: relative; */
     
     width: 50px;
     min-height: 40px;
     padding: 0;
+    background-color: var(--main-bacground-color);
     z-index: 3;
   }
 
@@ -317,7 +304,7 @@ details {padding: 0.5rem;}
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #1cdbab;
+    background-color: var(--aside-background-color);
     padding: 70px 10px 10px 10px;
     z-index: 3;
     transition: all 0.5s ease-in-out 0s;
@@ -364,7 +351,7 @@ details {padding: 0.5rem;}
     top: 0px;
   }
   
-  .main-photo img {padding: 5px 5px;}
+  .main-photo img {padding: 0;}
   
   main {max-width: 560px;}
 
@@ -372,12 +359,15 @@ details {padding: 0.5rem;}
 
   aside {
     max-width: 100%;
-    min-width: 560px;
+    align-content: center;
+    padding: 0;
     background-color: var(--container-background-color);
   }
+
+  aside a {color: var(--main-link-color)}
   .video-presentation {
     padding-left: 0;
-    max-width: 460px;
+    max-width: 500px;
   }
   footer {
     flex-direction: column;
@@ -401,15 +391,22 @@ details {padding: 0.5rem;}
     padding-left: 15%;
   }
   aside {
-    flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: flex-start;
+    max-width: 320px;
+    
+  }
+  aside li {color: var(--dark-font-color);}
+
+  .additional-title {
+    color: var(--dark-font-color);
+    background-color: transparent;
   }
   pre {
     overflow: scroll;
     max-width: 320px;
     font-size: 7px;
-    
   }
 
   pre code {
@@ -417,7 +414,7 @@ details {padding: 0.5rem;}
   }
   .video-presentation {
     padding-left: 0;
-    max-width: 290px;
+    max-width: 320px;
   }
   footer {
     flex-direction: column;
@@ -429,11 +426,14 @@ details {padding: 0.5rem;}
 @media (max-width: 320px) {
   .container {max-width: 310px;}
 
+  aside {max-width: 320px;}
+
   article {
     max-width: 280px;
     font-size: 0.8em;
     padding-right: 5px;
   }
+
   .contacts-wraper,
   .skills-wrapper,
   .langueges-wrapper {margin: 15px 5px;}
@@ -443,16 +443,19 @@ details {padding: 0.5rem;}
     padding:5px 3px 0 15px;
     max-width: 320px;
   }
+
   .screenshot {max-width: 270px;}
   
   .header__profile-wraper {
     max-width: 320px;
     padding-left: 2%;
   }
+
   .video-presentation {
     padding-left: 0;
     max-width: 270px;
   }
+
   footer {
     flex-direction: column;
     max-width: 280px;
