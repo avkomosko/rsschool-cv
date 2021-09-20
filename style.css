@@ -66,6 +66,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
   max-width: 100%;
+  max-width: 780px;
 }
 
 .burger {
@@ -77,7 +78,7 @@ header {
 }
 
 .menu-item {
-  padding: 0 10px 0 7px;
+  padding: 0 7px;
   margin: 0 3px;
   list-style: none;
 }
@@ -85,7 +86,7 @@ header {
 .menu-item:hover {box-shadow: 0 0 1em #ffffff;}
 
 .menu-link {
-  font-size: 0.75rem;
+  font-size: 0.70rem;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--main-font-color);
