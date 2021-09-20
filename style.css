@@ -45,8 +45,8 @@ header {
   display: block;
   grid-column: 1/4;
   overflow: hidden;
-  width: 100%;
-  max-width: 803px;
+  min-width: 770px;
+  max-width: 100%;
 }
 
 .menu-wrapper {
