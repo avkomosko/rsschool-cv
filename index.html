@@ -45,19 +45,18 @@
         </nav>
       </header>
 
-      <aside>
+      <aside class="aside">
         <picture class="main-photo">
           <source media="(max-width: 768px)" srcset="assets/img/photo_205_275.jpg">
           <source media="(min-width: 769px)" srcset="assets/img/photo_305_409.jpg">
-          <img src="assets/img/photo_305_409.jpg" alt="My photo for cv">
+          <img class="main-photo-img" src="assets/img/photo_305_409.jpg" alt="My photo for cv">
         </picture>
         <h2 class="additional-title">Aliaksei Kamoska</h2>
         <h2 class="additional-title">Junior Front End Developer</h2>
         <div class="contacts-wraper">
           <h3 id="contacts">Contacts</h3>
-          <ul>
-            <!-- <li>Address: 116-18 Libknehta str.,<br>Minsk, Belarus.</li>
-            <li>Phone: <a href="tel:+375(29)656-59-52">+375(29)656-59-52</a></li> -->
+          <ul class="aside-list">
+            <li>Phone: <a href="tel:+998(93)49-09-265">+998(93)49-09-265</a></li>
             <li>Email: <a href="mailto:avkomosko@gmail.com">avkomosko@gmail.com</a></li>
             <li>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></li>
           </ul>
@@ -65,7 +64,7 @@
 
         <div class="skills-wrapper">
           <h3 id="skills">Skills</h3>
-          <ul>
+          <ul class="aside-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>SASS</li>
@@ -84,7 +83,7 @@
 
         <div class="langueges-wrapper">
           <h3 id="languages">Languages</h3>
-          <ul>
+          <ul class="aside-list">
             <li>English B2+</li>
             <li>Polish A1</li>
             <li>Russian native</li>
@@ -93,15 +92,15 @@
 
       </aside>
 
-      <main>
+      <main class="main">
         <div class="profile-wraper">
           <h1 class="main-title">Aliaksei Kamoska</h1>
           <h2 class="main-title">Junior Front End Developer</h2>
           <article id="profile">
             <h3>Profile</h3>
-            <p>Budding front-end developer with a knowledge of how to build accessible and responsive web design. Easily can
+            <p class="main-text">Budding front-end developer with a knowledge of how to build accessible and responsive web design. Easily can
               learn new technologies and tools.</p>
-            <p>I have successfully negotiated with business partners from foreign counties, such
+            <p class="main-text">I have successfully negotiated with business partners from foreign counties, such
               as the USA and the GB on my previous work.</p>
           </article>
         </div>
@@ -132,6 +131,13 @@
               </a>
               <p>A learning project in TypeScript.</p>
             </li>
+            <li>
+              <a href="https://angular-todo-fe.netlify.app/" class="project" target="_blank">
+                RS school "Todo"
+                <img class="screenshot" src="assets/img/todo.png" alt="Todo screenshot">
+              </a>
+              <p>A full stack project. Back-end TypeScript, Express and Mongo DB. Front-end Angular</p>
+            </li>
           </ul>
         </article>
 
@@ -142,7 +148,7 @@
             const set = new Set(input.split(','));
             let array = Array.from(set);
 
-            array = array.map((el) => (el = +el));
+            array = array.map(el => (el = +el));
             array.sort((a, b) => a - b);
 
             return array.join(',');
@@ -170,7 +176,7 @@
         </article>
       </main>
 
-      <footer>
+      <footer class="footer">
         <details open>
           <summary>2021 GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></summary>
           <p>The CV has been created during learning at the Rs school.</p>
