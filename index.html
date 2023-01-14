@@ -52,7 +52,7 @@
           <img class="main-photo-img" src="assets/img/photo_305_409.jpg" alt="My photo for cv">
         </picture>
         <h2 class="additional-title">Aliaksei Kamoska</h2>
-        <h2 class="additional-title">Junior Front End Developer</h2>
+        <h2 class="additional-title">Software Engineer</h2>
         <div class="contacts-wraper">
           <h3 id="contacts">Contacts</h3>
           <ul class="aside-list">
@@ -84,7 +84,7 @@
         <div class="langueges-wrapper">
           <h3 id="languages">Languages</h3>
           <ul class="aside-list">
-            <li>English B2+</li>
+            <li>English B2</li>
             <li>Polish A1</li>
             <li>Russian native</li>
         </ul>
@@ -95,24 +95,18 @@
       <main class="main">
         <div class="profile-wraper">
           <h1 class="main-title">Aliaksei Kamoska</h1>
-          <h2 class="main-title">Junior Front End Developer</h2>
+          <h2 class="main-title">Software Engineer</h2>
           <article id="profile">
             <h3>Profile</h3>
-            <p class="main-text">Budding front-end developer with a knowledge of how to build accessible and responsive web design. Easily can
+            <p class="main-text">Front-end developer with a knowledge of how to build accessible and responsive web design. Easily can
               learn new technologies and tools.</p>
-            <p class="main-text">I have successfully negotiated with business partners from foreign counties, such
-              as the USA and the GB on my previous work.</p>
+            <p class="main-text">I am familiar with Angular, React and NodeJS.</p>
           </article>
         </div>
 
         <article id="experience">
-          <h3>Experience</h3>
+          <h3>Past projects</h3>
           <ul>
-            <li>MDN "HTML — Structuring the Web"</li>
-            <li>MDN "CSS — Styling the Web"</li>
-            <li>MDN "Web forms — Working with user data"</li>
-            <li>MDN "Accessibility — Make the web usable by everyone"</li>
-            <li>MDN "Tools and testing"</li>
             <li>
               <a href="https://rolling-scopes-school.github.io/avkomosko-JSFE2021Q3/momentum/" class="project" target="_blank">RS school "Momentum clone"
                 <img class="screenshot" src="assets/img/momentum.webp" alt="momentum screenshot">
@@ -125,26 +119,6 @@
               </a>
               <p>A learning project in pure JavaScript and SCSS. It has detailed description in the console.</p>
             </li>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/avkomosko-JSFE2021Q3/migration-to-typescript/" class="project" target="_blank">RS school "Migration to TypeScript"
-                <img class="screenshot" src="assets/img/migration.webp" alt="news Api screenshot">
-              </a>
-              <p>A learning project in TypeScript.</p>
-            </li>
-            <li>
-              <a href="https://angular-todo-fe.netlify.app/" class="project" target="_blank">
-                RS school "Todo" - Angular
-                <img class="screenshot" src="assets/img/todo.webp" alt="Todo screenshot">
-              </a>
-              <p>A full stack project. Back-end TypeScript, Express and Mongo DB. Front-end Angular.</p>
-            </li>
-            <li>
-              <a href="https://st-react-todo.netlify.app/" class="project" target="_blank">
-                RS school "Todo" - React
-                <img class="screenshot" src="assets/img/react-todo.webp" alt="Todo screenshot">
-              </a>
-              <p>A full stack project. Back-end TypeScript, Express and Mongo DB. Front-end TypeScript, React + Redux.</p>
-            </li>
           </ul>
         </article>
 
@@ -155,7 +129,7 @@
             const set = new Set(input.split(','));
             let array = Array.from(set);
 
-            array = array.map(el => (el = +el));
+            array = array.map(el => Number(el));
             array.sort((a, b) => a - b);
 
             return array.join(',');
@@ -174,6 +148,7 @@
             <li>2021-present online course on <a href="https://learn.javascript.ru/">Learnjavascript.ru</a></li>
             <li>2021-2022 "Short track" course at the <a href="https://rs.school/">RS School</a></li>
             <li>2022 Website Performance Optimization <a href="https://www.udacity.com/">Udacity</a></li>
+            <li>2022 NodeJS in AWS at the <a href="https://rs.school/">RS School</a></li></li>
           </ul>
         </article>
 
@@ -185,14 +160,14 @@
 
       <footer class="footer">
         <details open>
-          <summary>2021 GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></summary>
-          <p>The CV has been created during learning at the Rs school.</p>
+          <summary>GitHub: <a href="https://github.com/avkomosko">@avkomosko</a></summary>
+          <p>The CV has been created during learning at the RS school.</p>
         </details>
 
         <figure>
           <img src="https://rs.school/images/rs_school_js.svg" alt="rs school logo" width="280" height="104">
           <figcaption>
-            <a href="https://rs.school/js/">RSSchool Курс «JavaScript/Front-end»</a>
+            <a href="https://rs.school/js/">RSSchool course «JavaScript/Front-end»</a>
           </figcaption>
         </figure>
       </footer>
